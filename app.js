@@ -15,12 +15,7 @@ const AlbumGrid = ({ onAlbumClick, selectedUrl }) => {
         src: 'albums/wereone.jpg',
         alt: "We're One (Blowout edit)",
         embedUrl: 'https://bandcamp.com/EmbeddedPlayer/track=3242474619/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/'
-      },
-      {
-        src: 'albums/truth.jpg',
-        alt: "Moment of Truth",
-        embedUrl: 'https://bandcamp.com/EmbeddedPlayer/track=3017139358/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/'
-      }  
+      }
     ];
   
     return (
@@ -350,7 +345,7 @@ const App = () => {
                             style={{ 
                                 border: 0, 
                                 width: '100%', 
-                                height: '200px',
+                                height: '120px',
                                 maxWidth: '100%',
                                 borderRadius: '0.5rem'
                             }}
