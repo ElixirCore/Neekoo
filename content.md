@@ -26,8 +26,8 @@ Let's create something amazing together! I'd love to hear from you! ❤️😊
 - Instagram: <a href="https://www.instagram.com/n_e_e_k_o_o___/?hl=en" target="_blank">@n_e_e_k_o_o___</a>
 - Soundcloud: <a href="https://soundcloud.com/neekoo-1" target="_blank">neekoo-1</a>
 - Facebook: <a href="https://www.facebook.com/profile.php?id=61562327565795" target="_blank">Neekoo Official</a>
-- Tales from The Motherboard: <a href="https://www.facebook.com/groups/1449787745755312" target="_blank">Join our producer community!</a>
 - Spotify: <a href="https://open.spotify.com/artist/2w9PRlRrtw9HAWrXRQIn94" target="_blank">Profile</a>
 - Youtube: <a href="https://www.youtube.com/@Neekoo-jw5xd" target="_blank">Channel</a>
-<br>Thank you for being part of this musical journey! 🎵✨
+- Tales from The Motherboard: <a href="https://www.facebook.com/groups/1449787745755312" target="_blank">Join our producer community!</a>
+<br><br>Thank you for being part of this musical journey! 🎵✨
 <br>Stick around for a surprise gift - and remember: House and Techno Music A Feeling! Dance to your own beat!

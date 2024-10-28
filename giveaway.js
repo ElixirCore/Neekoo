@@ -15,12 +15,7 @@ const AlbumGrid = ({ onAlbumClick, selectedUrl }) => {
         src: 'albums/wereone.jpg',
         alt: "We're One (Blowout edit)",
         embedUrl: 'https://bandcamp.com/EmbeddedPlayer/track=3242474619/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/'
-      },
-      {
-        src: 'albums/truth.jpg',
-        alt: "Moment of Truth",
-        embedUrl: 'https://bandcamp.com/EmbeddedPlayer/track=3017139358/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/'
-      }  
+      }
     ];
   
     return (
@@ -45,18 +40,20 @@ const AlbumGrid = ({ onAlbumClick, selectedUrl }) => {
   
 // Main App Component
 const App = () => {
-    const [showSplash, setShowSplash] = React.useState(true);
-    const [activeSection, setActiveSection] = React.useState('home');
-    const [selectedAlbum, setSelectedAlbum] = React.useState(null);
-    const [content, setContent] = React.useState({});
-    const [error, setError] = React.useState(null);
-    const [touchStart, setTouchStart] = React.useState(0);
-    const [touchEnd, setTouchEnd] = React.useState(0);
-    const [isPlaying, setIsPlaying] = React.useState(false);
-    const [audioElement, setAudioElement] = React.useState(null);
-    const [visualizer, setVisualizer] = React.useState(null);
-    const [isLeavingHome, setIsLeavingHome] = React.useState(false);
-    const [showGiveaway, setShowGiveaway] = React.useState(false);
+    const { useState, useEffect } = React;
+
+    const [showSplash, setShowSplash] = useState(true);
+    const [activeSection, setActiveSection] = useState('home');
+    const [selectedAlbum, setSelectedAlbum] = useState(null);
+    const [content, setContent] = useState({});
+    const [error, setError] = useState(null);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [audioElement, setAudioElement] = useState(null);
+    const [visualizer, setVisualizer] = useState(null);
+    const [isLeavingHome, setIsLeavingHome] = useState(false);
+    const [showGiveaway, setShowGiveaway] = useState(false);
 
     const fadeOutDuration = 1000;
   
@@ -69,7 +66,7 @@ const App = () => {
     ];
   
     // Content Loading Effect
-    React.useEffect(() => {
+    useEffect(() => {
       fetch('content.md')
         .then(response => {
           if (!response.ok) {
@@ -93,7 +90,7 @@ const App = () => {
     }, []);
   
     // Splash Screen Effect
-    React.useEffect(() => {
+    useEffect(() => {
       const timer = setTimeout(() => {
         const splashElement = document.querySelector('.splash-screen');
         if (splashElement) {
@@ -109,7 +106,7 @@ const App = () => {
     }, []);
 
     // Giveaway Effect
-    React.useEffect(() => {
+    useEffect(() => {
         const hasBeenShown = localStorage.getItem('giveawayShown') === 'true';
         if (!hasBeenShown && !showGiveaway) {
             const timer = setTimeout(() => {
@@ -121,7 +118,7 @@ const App = () => {
     }, [showGiveaway]);
 
     // Audio Setup Effect
-    React.useEffect(() => {
+    useEffect(() => {
         let audio = null;
         let visualizerInstance = null;
 
@@ -158,7 +155,7 @@ const App = () => {
     }, []);
 
     // Section Change Effect
-    React.useEffect(() => {
+    useEffect(() => {
         if (activeSection !== 'home' && isPlaying) {
             setIsLeavingHome(true);
             
@@ -350,7 +347,7 @@ const App = () => {
                             style={{ 
                                 border: 0, 
                                 width: '100%', 
-                                height: '200px',
+                                height: '120px',
                                 maxWidth: '100%',
                                 borderRadius: '0.5rem'
                             }}
